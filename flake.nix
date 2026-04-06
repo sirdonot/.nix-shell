@@ -11,6 +11,6 @@
     let
       lib = nixpkgs.lib;
     in {
-    nixosConfigurations = { NixOS = lib.nixosSystem { system = "x86_64-linux"; specialArgs = { inherit inputs; }; modules = [ ./configuration.nix ]; }; };
+    nixosConfigurations = { nixos = lib.nixosSystem { system = "x86_64-linux"; specialArgs = { inherit inputs; }; modules = [ ./configuration.nix ]; }; };
   };
 }
