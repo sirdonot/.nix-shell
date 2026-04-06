@@ -13,11 +13,6 @@
     dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
 
     package = pkgs.steam.override {
-      extraEnv = {
-        MANGOHUD = true;
-        OBS_VKCAPTURE = true;
-      };
-
       extraPkgs = pkgs': with pkgs'; [
         libXcursor
         libXi
