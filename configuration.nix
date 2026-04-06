@@ -13,7 +13,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
-  networking.hostName = "NixOS";
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Sao_Paulo";
